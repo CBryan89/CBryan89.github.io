@@ -1,53 +1,333 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Bryan | Computer Science ePortfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christopher Bryan's Computer Science ePortfolio featuring software engineering, algorithms, databases, and secure development.">
+  <title>Christopher Bryan | Computer Science ePortfolio</title>
+
+  <style>
+    :root {
+      --navy: #14263e;
+      --blue: #235c9f;
+      --light: #f3f6fa;
+      --white: #ffffff;
+      --text: #263448;
+      --muted: #52647a;
+      --border: #dce4ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--light);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 65px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin: 0;
+    }
+
+    header h2 {
+      font-size: 1.25rem;
+      font-weight: normal;
+      color: #bfd5f2;
+      margin: 12px 0;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: 18px auto 0;
+      color: #e0e8f2;
+    }
+
+    nav {
+      background: #203955;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--white);
+      padding: 30px;
+      margin-bottom: 25px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    h2 { color: var(--navy); }
+
+    h3 { color: var(--blue); }
+
+    .intro {
+      border-left: 5px solid var(--blue);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 8px 8px 8px 0;
+    }
+
+    .button:hover, .button:focus {
+      background: #173f71;
+    }
+
+    .status {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 35px;
+    }
+
+    footer p { margin: 5px; }
+
+    @media (max-width: 600px) {
+      header { padding: 40px 18px; }
+      section { padding: 22px; }
+      nav { gap: 12px; }
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Christopher Bryan</h1>
-        <h2>Computer Science ePortfolio</h2>
-    </header>
+<header>
+  <h1>Christopher Bryan</h1>
+  <h2>Computer Science ePortfolio</h2>
+  <p>
+    Southern New Hampshire University |
+    Bachelor of Science in Computer Science |
+    Software Engineering Concentration
+  </p>
+  <p>
+    Software Development • Data Structures • Databases • Security
+  </p>
+</header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Welcome to my Computer Science ePortfolio. I am completing my
-                Bachelor of Science in Computer Science at Southern New Hampshire
-                University. This portfolio demonstrates the knowledge and skills
-                I have developed throughout the program.
-            </p>
-        </section>
+<nav aria-label="Main navigation">
+  <a href="#assessment">Self-Assessment</a>
+  <a href="#review">Code Review</a>
+  <a href="#projects">Projects</a>
+  <a href="#career">Career Goals</a>
+</nav>
 
-        <section>
-            <h2>Portfolio Categories</h2>
-            <ul>
-                <li>Software Engineering and Design</li>
-                <li>Algorithms and Data Structures</li>
-                <li>Databases</li>
-            </ul>
-        </section>
+<main>
 
-        <section>
-            <h2>Career Goals</h2>
-            <p>
-                My future goals include continuing my education and exploring
-                graduate study related to healthcare informatics. I am interested
-                in combining my computer science education with my previous
-                experience in veterinary medicine to work with technology,
-                information systems, and data in a healthcare-related field.
-            </p>
-        </section>
-    </main>
+<section id="assessment" class="intro">
+  <h2>Professional Self-Assessment</h2>
 
-    <footer>
-        <p>CS 499 Computer Science Capstone</p>
-    </footer>
+  <p>
+    As I approach graduation from Southern New Hampshire
+    University in November 2026, I am proud of the technical
+    skills and professional growth I have achieved throughout
+    my Computer Science program.
+  </p>
+
+  <p>
+    My experience in military service, federal employment,
+    and healthcare-related operations has helped me develop
+    leadership, communication, analytical thinking, and
+    problem-solving skills. Through my education, I have
+    expanded these abilities into software engineering,
+    database management, algorithms, and secure development.
+  </p>
+
+  <p>
+    My professional goal is to combine my computer science
+    education with my experience in federal service and
+    healthcare operations to contribute to reliable,
+    secure, and effective information systems.
+  </p>
+
+  <p class="status">
+    Full professional self-assessment document will be
+    added to this section.
+  </p>
+</section>
+
+<section id="review">
+  <h2>Code Review</h2>
+
+  <p>
+    My CS 499 code review evaluates existing software
+    artifacts, identifies opportunities for improvement,
+    and explains planned enhancements in software
+    engineering, algorithms and data structures,
+    and databases.
+  </p>
+
+  <p class="status">
+    Code review video link will be added here.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Computer Science Capstone Enhancements</h2>
+
+  <p>
+    My capstone demonstrates my development across three
+    essential areas of computer science. Each enhancement
+    builds on a project from my previous coursework.
+  </p>
+
+  <div class="cards">
+
+    <article class="card">
+      <h3>Software Engineering and Design</h3>
+      <p><strong>Artifact:</strong> Travlr Getaways</p>
+      <p>
+        Enhanced a full-stack web application through
+        improved authentication, authorization, input
+        validation, error handling, and protected CRUD
+        operations using JavaScript, Angular, Express,
+        Node.js, and MongoDB.
+      </p>
+      <p class="status">
+        Original code, enhanced code, and narrative
+        will be linked here.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Algorithms and Data Structures</h3>
+      <p><strong>Artifact:</strong> Binary Search Tree</p>
+      <p>
+        Enhanced an existing C++ binary search tree
+        implementation using AVL tree balancing.
+        Verified tree balance and evaluated the
+        efficiency of operations through testing.
+      </p>
+      <p class="status">
+        Original code, enhanced code, and narrative
+        will be linked here.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Databases</h3>
+      <p><strong>Artifact:</strong> Travlr Getaways</p>
+      <p>
+        Improved MongoDB database functionality
+        through searching, filtering, sorting,
+        pagination, schema updates, and validation
+        to support reliable data retrieval.
+      </p>
+      <p class="status">
+        Original code, enhanced code, and narrative
+        will be linked here.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section id="career">
+  <h2>Professional Background and Career Goals</h2>
+
+  <h3>Federal Service</h3>
+  <p>
+    I currently serve as a Legal Instruments Examiner
+    with the Federal Bureau of Prisons at the
+    Designation and Sentence Computation Center
+    in Grand Prairie, Texas.
+  </p>
+
+  <p>
+    In October 2026, I am scheduled to begin a new
+    position as a Medical Supply Technician at
+    FMC Carswell, where I will support healthcare
+    operations through inventory management,
+    supply distribution, and accurate recordkeeping.
+  </p>
+
+  <h3>Continuing Education</h3>
+  <p>
+    Following completion of my Bachelor of Science
+    in Computer Science, I plan to continue my
+    education through a Master's degree in
+    Health Information Management at Southern
+    New Hampshire University.
+  </p>
+
+  <p>
+    My long-term interests include healthcare
+    information systems, database management,
+    software development, information security,
+    and technology-driven improvements to
+    healthcare operations.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Christopher Bryan</strong></p>
+  <p>CS 499 | Computer Science Capstone</p>
+  <p>Southern New Hampshire University | 2026</p>
+</footer>
 
 </body>
 </html>
